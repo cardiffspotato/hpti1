@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: plum;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 8rem;
+    color: #FFFDD0;
+    margin-bottom: 1rem;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title2{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title3{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #FFFDD0;
+}
+
+#answers-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#answers-container button {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+#question-container {
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 3rem;
+    padding: 1.5rem; /* 질문 주변에 20px의 여백 추가 */
+    background-color: #f0f0f0; /* 배경색을 회색으로 설정 */
+    border-radius: 10px; /* 테두리를 둥글게 만듦 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+#result-container {
+    font-size: 2.5rem;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+#result-container img {
+    border-radius: 3rem;
+    max-width: 100%; /* 이미지의 최대 너비를 부모 요소에 맞게 설정합니다. */
+    height: auto; /* 이미지의 높이를 너비에 따라 자동으로 조정합니다. */
+    display: block; /* 이미지를 가운데 정렬하기 위해 블록 레벨 요소로 설정합니다. */
+    margin: 0 auto; /* 이미지를 수평으로 가운데 정렬합니다. */
+}
+
+/* 결과 설명 */
+#result-container p {
+    margin-bottom: 20px; /* 결과 설명과 버튼 사이의 여백을 설정합니다. */
+}
+
+.food-ex{
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 767px) {
+    h1{
+        font-size: 6rem;
+    }
+    .title2{
+        font-size: 2rem;
+    }
+    .title3{
+        font-size: 1.5rem;
+        padding: 3rem;
+        margin-bottom: 2rem;
+    }
+    button{
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    .question{
+        padding: 2rem;
+    }
+    .answer{
+        padding: 2rem;
+    }
+    #result-container p{
+        padding: 2rem;
+    }
+    #result-container img {
+        width: 20rem;
+        border-radius: 1rem;
+    }
+}
+  
+  /* 태블릿에 대응하는 스타일 */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+}
